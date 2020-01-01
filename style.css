@@ -1,0 +1,44 @@
+body {
+  background-color: black;
+  font-family: news-gothic-std, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+}
+
+input {
+  display: block;
+  width: 100%;
+}
+
+.outer-container {
+  height: 350px;
+  overflow: hidden;
+  perspective: 125px;
+  perspective-origin: top;
+  position: absolute;
+  width: 90%;
+  left: 5%;
+}
+
+.inner-container {
+  position: absolute;
+  top: 100%;
+  transition: top 75s;
+  transition-timing-function: linear;
+  text-align: justify;
+}
+
+.crawl {
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: yellow;
+  position: relative;
+  margin: 0 auto;
+  height: 450px;
+  width: 70%;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg);
+  overflow: hidden;
+}
+
+
