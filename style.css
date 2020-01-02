@@ -1,31 +1,45 @@
 body {
-  background-color: black;
+  background-color: rgb(24, 26, 27);
+  border-color: rgb(87, 87, 87);
+  color: rgb(24, 26, 27);
   font-family: news-gothic-std, sans-serif;
   font-style: normal;
   font-weight: 800;
+  display: flex;
+  flex-direction: row;
 }
 
 input {
   display: block;
   width: 100%;
+  border-color: rgb(87, 87, 87);
+  color: rgb(160, 160, 160);
+  background-color: rgb(24, 26, 27);
 }
 
-.outer-container {
-  height: 350px;
+textarea {
+  background-color: rgb(24, 26, 27);
+  border-color: rgb(87, 87, 87);
+  color: rgb(160, 160, 160);
+  resize: none;
+}
+
+.outer-container-right {
+  background-color: black;
+  height: auto;
   overflow: hidden;
   perspective: 125px;
   perspective-origin: top;
-  position: absolute;
-  width: 90%;
-  left: 5%;
+  width: 100%;
 }
 
 .inner-container {
   position: absolute;
-  top: 100%;
-  transition: top 75s;
+  top: 70%;
+  transition: top 60s;
   transition-timing-function: linear;
   text-align: justify;
+  white-space: pre-wrap;
 }
 
 .crawl {
@@ -41,4 +55,9 @@ input {
   overflow: hidden;
 }
 
-
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
