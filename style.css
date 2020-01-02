@@ -2,9 +2,6 @@ body {
   background-color: rgb(24, 26, 27);
   border-color: rgb(87, 87, 87);
   color: rgb(24, 26, 27);
-  font-family: news-gothic-std, sans-serif;
-  font-style: normal;
-  font-weight: 800;
   display: flex;
   flex-direction: row;
 }
@@ -28,7 +25,7 @@ textarea {
   background-color: black;
   height: auto;
   overflow: hidden;
-  perspective: 125px;
+  perspective: 100px;
   perspective-origin: top;
   width: 100%;
 }
@@ -36,7 +33,7 @@ textarea {
 .inner-container {
   position: absolute;
   top: 70%;
-  transition: top 60s;
+  /* transition: top 60s; */
   transition-timing-function: linear;
   text-align: justify;
   white-space: pre-wrap;
@@ -45,7 +42,11 @@ textarea {
 .crawl {
   font-size: 20px;
   letter-spacing: 4px;
-  color: yellow;
+  word-spacing: ,8em;
+  color: rgb(229,177,58);
+  font-family: news-gothic-std, sans-serif;
+  font-style: normal;
+  font-weight: 1000;
   position: relative;
   margin: 0 auto;
   height: 450px;

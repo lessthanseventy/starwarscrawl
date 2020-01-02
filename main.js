@@ -15,5 +15,8 @@ let play = function() {
 
   let topAmount = outputDiv.offsetHeight;
   console.log(topAmount);
+  let animationTime = (topAmount / 800) * 150;
+  outputDiv.style.transition = 'top ' + animationTime + 's linear 0s';
+  console.log(outputDiv.style.transition);
   outputDiv.style.top = '-' + topAmount + 'px';
 }
